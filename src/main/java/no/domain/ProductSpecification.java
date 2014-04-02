@@ -5,7 +5,7 @@ import no.domain.id.ProductId;
 import java.util.Arrays;
 import java.util.List;
 
-public class ProductSpecification implements Specification<Product> {
+public class ProductSpecification extends Specification<Product> {
     public final List<ProductId> productIds;
 
     private ProductSpecification(List<ProductId> productIds) {
