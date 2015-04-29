@@ -1,4 +1,14 @@
 package no.domain;
 
-public abstract class Specification<E extends Entity> {
+import no.domain.id.Id;
+
+import java.util.List;
+
+public class Specification<T extends Id> {
+
+    public final List<T> ids;
+
+    protected Specification(List<T> ids) {
+        this.ids = ids;
+    }
 }

@@ -1,6 +1,7 @@
 package no.domain;
 
-import no.domain.id.ProductId;
+import no.domain.credit.CreditCard;
+import no.domain.credit.CreditCardId;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -8,12 +9,12 @@ public class EntityTest {
 
     @Test
     public void testEquals() {
-        Assert.assertEquals(new Product(new ProductId(123)), new Product(new ProductId(123)));
+        Assert.assertEquals(new CreditCard(new CreditCardId(123)), new CreditCard(new CreditCardId(123)));
     }
 
     @Test
     public void testNotEquals() {
-        Assert.assertNotSame(new Product(new ProductId(123)), new Product(new ProductId(456)));
+        Assert.assertNotSame(new CreditCard(new CreditCardId(123)), new CreditCard(new CreditCardId(456)));
     }
 
 }

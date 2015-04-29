@@ -1,10 +1,10 @@
-package no.domain.id;
+package no.domain.credit;
 
 import no.domain.id.Id;
 
-public class ProductId extends Id<Integer> {
+public class CreditCardId extends Id<Integer> {
 
-        public ProductId(Integer id) {
+        public CreditCardId(Integer id) {
             super(id);
         }
 

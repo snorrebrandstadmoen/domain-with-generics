@@ -6,13 +6,13 @@ import no.domain.id.Id;
 
 import java.util.List;
 
-public interface Repository<E extends Entity<I>, I extends Id, S extends Specification<E>> {
+public interface Repository<E extends Entity<T>, T extends Id, S extends Specification> {
 
-    E get(I id);
+    E get(T id);
 
     List<E> find(S specification);
 
     E save(E entity);
 
-    void delete(I id);
+    void delete(T id);
 }
